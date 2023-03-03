@@ -1,3 +1,3 @@
-module github.com/go-gl/glfw
+module github.com/bjorndm/go-glfw
 
 go 1.12
