@@ -2,7 +2,7 @@
 
 ## Installation
 
-* GLFW C library source is included and built automatically as part of the Go package. But you need to make sure you have dependencies of GLFW:
+* GLFWFF C library source is included and built automatically as part of the Go package. But you need to make sure you have dependencies of GLFW:
 	* On macOS, you need Xcode or Command Line Tools for Xcode (`xcode-select --install`) for required headers and libraries.
 	* On Ubuntu/Debian-like Linux distributions, you need `libgl1-mesa-dev` and `xorg-dev` packages.
 	* On CentOS/Fedora-like Linux distributions, you need `libX11-devel libXcursor-devel libXrandr-devel libXinerama-devel mesa-libGL-devel libXi-devel libXxf86vm-devel` packages.
@@ -13,7 +13,7 @@
 * Go 1.4+ is required on Windows (otherwise you must use MinGW v4.8.1 exactly, see [Go issue 8811](https://github.com/golang/go/issues/8811)).
 
 ```
-go get -u github.com/bjorndm/go-glfw/v3.4/glfw
+go get -u github.com/bjorndm/go-glfwff
 ```
 
 ### OpenGL ES
@@ -22,7 +22,7 @@ If your target system only provides an OpenGL ES implementation (true for some A
 You do this by defining the appropriate build tags, e.g.
 
 ```
-go get -u -tags=gles2 github.com/bjorndm/go-glfw/v3.4/glfw
+go get -u -tags=gles2 github.com/bjorndm/go-glfwff
 ```
 
 Supported tags are `gles1`, `gles2`, `gles3` and `vulkan`.
@@ -35,7 +35,7 @@ package main
 
 import (
 	"runtime"
-	"github.com/bjorndm/go-glfw/v3.4/glfw"
+	glfw "github.com/bjorndm/go-glfwff"
 )
 
 func init() {
