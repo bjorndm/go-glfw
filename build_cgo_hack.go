@@ -13,7 +13,7 @@ package glfw
 //  - this file is given a build to exclude it from the regular build.
 import (
 	// Prevent go tooling from stripping out the c source files.
-	_ "github.com/bjorndm/go-glfwff/glfw/deps"
-	_ "github.com/bjorndm/go-glfwff/glfw/include/GLFW"
-	_ "github.com/bjorndm/go-glfwff/glfw/src"
+	_ "github.com/bjorndm/go-glfwff-src/glfw/deps"
+	_ "github.com/bjorndm/go-glfwff-src/glfw/include/GLFW"
+	_ "github.com/bjorndm/go-glfwff-src/glfw/src"
 )
